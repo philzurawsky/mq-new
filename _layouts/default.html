@@ -5,13 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% if site.css_inline == true %}
-        {% capture styles %}
-        @import "mq-new";
-        {% endcapture %}
-        <style>{{ styles | scssify | strip_newlines }}</style>
-        {% else %}
-        <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+        {% @import "mq-new" %};
+
         {% endif %}
     </head>
 
