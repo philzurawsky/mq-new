@@ -1,5 +1,17 @@
---- --- body {
-  background-color: #303030;
-}
+/* Error: expected "{".
+ *   ,
+ * 5 | $text-primary: #b6b6b6;
+ *   |                       ^
+ *   '
+ *   stmq.scss 5:23  root stylesheet */
 
-/*# sourceMappingURL=stmq.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 5 \2502  $text-primary: #b6b6b6;\a   \2502                        ^\a   \2575 \a   stmq.scss 5:23  root stylesheet';
+}
