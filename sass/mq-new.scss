@@ -1,6 +1,4 @@
----
-
----
+@charset "utf-8";
 
 $text-primary: #b6b6b6;
 $text-secondary: #ececec;
@@ -29,7 +27,7 @@ main {
 .navbar {
   position: fixed;
   background-color: $bg-primary;
-  transition: width 600ms eaase;
+  transition: width 600ms ease;
   overflow: scroll;
 }
 
