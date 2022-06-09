@@ -27,7 +27,7 @@ author: Filip Zurawski
 sass:
     style: compressed
 permalink: pretty
-excerpt_separator: <!-- more --> #End of excerpt in posts
+excerpt_separator: <!-- more -->
 timezone: Australia/Sydney
 
 # Collections
