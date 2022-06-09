@@ -68,51 +68,51 @@ css_inline: true
 # Navigation
 navigation:
   - units:
-      title: Units
+      title: "Units"
       url: /units/
       - comp1000:
-          title: COMP1000
+          title: "COMP1000"
           url: /comp1000/
           chapters:
             - 1:
-                name: Transition to Processing
+                name: "Transition to Processing"
                 url: /1_transition_processing/
             - 2:
-                name: Primitive Operations
+                name: "Primitive Operations"
                 url: /1_transition_processing/
             - 3:
-                name: Algorithms
+                name: "Algorithms"
                 url: /1_transition_processing/
             - 4:
-                name: Variables
+                name: "Variables"
                 url: /1_transition_processing/
             - 5:
-                name: Moving Composite Shapes
+                name: "Moving Composite Shapes"
                 url: /1_transition_processing/
             - 6:
-                name: Debugging in Processing
+                name: "Debugging in Processing"
                 url: /1_transition_processing/
             - 7:
-                name: Boolean Expressions
+                name: "Boolean Expressions"
                 url: /1_transition_processing/
             - 8:
-                name: Conditions
+                name: "Conditions"
                 url: /1_transition_processing/
   - universal:
-      title: Universal Skills
+      title: "Universal Skills"
       url: /universal_skills/
       - 1:
-          name: Study Skills
+          name: "Study Skills"
           url: /1_study_skills/
       - 2:
-          name: How to Use Google
+          name: "How to Use Google"
           url: /2_how_to_use_google/
       - 3:
-          name: Improving Coding Skills
+          name: "Improving Coding Skills"
           url: /3_improving_coding_skills/
 
 navigation_footer:
-  - title: Macquarie University
+  - title: "Macquarie University"
     url: https://mq.edu.au/
 
 fonts:
