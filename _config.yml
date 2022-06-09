@@ -68,6 +68,11 @@ navigation:
   - units:
       - name: COMP1000
         url: /comp1000/
+        chapters:
+          - name: Transition to Processing
+            url: /transition_to_processing/
+          - name: Primitive Operations
+            url: /primitive_operations/
       - name: COMP1010
         url: /comp1010/
 
