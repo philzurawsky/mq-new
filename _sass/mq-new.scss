@@ -33,13 +33,10 @@
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 5rem;
+    width: 16rem;
     height: 100vh;
   }
 
-  .navbar:hover {
-    width: 16rem;
-  }
 
   .navbar:hover .link-text {
     display: inline;
