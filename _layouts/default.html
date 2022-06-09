@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-    <head>
-        <!-- General meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- General meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% capture styles %}
-        @import "mq-new";
-        {% endcapture %}
-        <style>{{ styles | scssify | strip_newlines }}</style>
+    {% if page.indexing == false %}
+    <meta name="robots" content="noindex">
+    {% endif %}
 
-        <link
-                href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-                rel="stylesheet"
-        />
-    </head>
+    {% if page.collectionpage %}
+    {% seo title=false %}
 
-    <body>
+    {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+    <title>{{ collectiondata.title }} - {{ site.title }}</title>
+    <meta property="og:title" content="{{ collectiondata.title }}">
+    <meta name="description" content="{{ collectiondata.description }}">
+    <meta property="og:description" content="{{ collectiondata.description }}">
+    {% else %}
+    {% seo %}
+    {% endif %}
+    {% if site.fonts.preconnect_urls %}
+    {% for url in site.fonts.preconnect_urls %}
+    <link rel="preconnect" href="{{ url }}" crossorigin />
+    {% endfor %}
+    {% endif %}
 
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="logo">
-                <a href="#" class="nav-link">
-                    <span class="link-text logo-text">Units</span>
-                </a>
-            </li>
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="link-text">COMP1000</span>
-                </a>
-            </li>
+    {% if site.css_inline == true %}
+    {% include site-styles.html %}
+    {% else %}
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+    {% endif %}
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="link-text">COMP1010</span>
-                </a>
-            </li>
+    {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
 
-            <li class="nav-item">
-                <h1>Universal</h1>
-            </li>
-        </ul>
-    </nav>
+    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-        </main>
+    {% include site-fonts.html %}
 
-    </body>
+    {% include site-before-start.html %}
+</head>
+
+<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+
+{{ content }}
+
+
+</body>
 </html>
