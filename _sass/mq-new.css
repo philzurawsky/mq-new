@@ -53,7 +53,6 @@ main {
   height: 5rem;
   color: #bdc1c4;
   text-decoration: none;
-  transition: 600ms;
 }
 
 .nav-link:hover {
@@ -75,13 +74,6 @@ main {
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;
-}
-
-.logo-text {
-  display: inline;
-  position: absolute;
-  left: -999px;
-  transition: 600ms;
 }
 
 /* Small devices */
