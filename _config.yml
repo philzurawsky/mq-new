@@ -65,7 +65,7 @@ css_inline: true
 
 # Navigation
 navigation:
-  - Units:
+  - units:
       - name: COMP1000
         url: /comp1000/
         chapters:
@@ -75,7 +75,7 @@ navigation:
             url: /primitive_operations/
       - name: COMP1010
         url: /comp1010/
-  - Universal:
+  - universal:
       - name: Studying Skills
         url: /studying_skills/
 
