@@ -31,11 +31,11 @@ excerpt_separator: <!-- more -->
 timezone: Australia/Sydney
 
 # Collections
-collections:
-  units:
-    output: true
-  universal_skills:
-    output: true
+#collections:
+ # units:
+  #  output: true
+ # universal_skills:
+  #  output: true
 
 # Collections Settings
 defaults:
