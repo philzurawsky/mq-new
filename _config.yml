@@ -66,17 +66,17 @@ css_inline: true
 # Navigation
 navigation:
   - units:
-      - name: COMP1000
+      - title: COMP1000
         url: /comp1000/
         chapters:
-          - name: Transition to Processing
+          - title: Transition to Processing
             url: /transition_to_processing/
-          - name: Primitive Operations
+          - title: Primitive Operations
             url: /primitive_operations/
-      - name: COMP1010
+      - title: COMP1010
         url: /comp1010/
   - universal:
-      - name: Studying Skills
+      - title: Studying Skills
         url: /studying_skills/
 
 
