@@ -1,5 +1,6 @@
 ---
-Title: Demo | Software Technology Hub
+title: Demo
+layout: page
 ---
-# Header
+
 This is a paragraph
