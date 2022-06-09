@@ -1,11 +1,20 @@
+/*
+
+Variables
+
+*/
+/*
+
+Colors
+
+*/
 :root {
-  font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-  color: black;
-  background-color: white;
+  color: #bdc1c4;
+  background-color: #313436;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +26,7 @@ main {
 
 .navbar {
   position: fixed;
-  background-color: #23232e;
+  background-color: #313436;
   transition: width 600ms ease;
   overflow: scroll;
 }
@@ -44,27 +53,18 @@ main {
   display: flex;
   align-items: center;
   height: 5rem;
-  color: #b6b6b6;
+  color: #bdc1c4;
   text-decoration: none;
   transition: 600ms;
 }
 
 .nav-link:hover {
-  background-color: #141418;
-  color: #ececec;
+  background-color: #8a0012;
+  color: #f2f3f3;
 }
 
 .link-text {
-  display: none;
   margin-left: 1rem;
-}
-
-.fa-primary {
-  color: #ff7eee;
-}
-
-.fa-secondary {
-  color: #df49a6;
 }
 
 .logo {
@@ -72,8 +72,8 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
-  color: #ececec;
-  background: #141418;
+  color: #f2f3f3;
+  background: #3d4144;
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;

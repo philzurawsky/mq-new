@@ -1,0 +1,20 @@
+<script>
+(() => {
+    const registerServiceWorker = () => {
+        if (!navigator.serviceWorker) {
+            return;
+        }
+
+        navigator.serviceWorker
+            .register("{{ "/sw.js" | relative_url }}")
+            .then(registration => {
+                console.log("Service Worker: Registered");
+        })
+            .catch(err => {
+                console.error("Service Worker: Registration FAILED: ", err);
+            });
+    };
+
+    registerServiceWorker();
+})();
+</script>
