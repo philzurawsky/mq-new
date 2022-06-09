@@ -1,7 +1,5 @@
 .navbar {
-  position: fixed;
   background-color: $background-color;
-  transition: width 600ms ease;
   overflow: scroll;
 }
 
@@ -33,7 +31,7 @@
 }
 
 .nav-link:hover {
-  background-color: mix(#000, $primary-color, 20%);
+  background-color: mix(#000, $primary-color, 50%);
   color: $secondary-text-color;
 }
 
