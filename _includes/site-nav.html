@@ -1,10 +1,11 @@
 <nav class="navbar">
     <ul class="navbar-nav">
 
-        {% for item in site. %}
-        <li class="nav-header">
-            <h1>STMQ</h1>
+        {% for item in site.navigation %}
+        <li class="nav-item">
+            <h1>{{ item }}</h1>
         </li>
+        {% endfor %}
 
 
 
