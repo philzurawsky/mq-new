@@ -66,48 +66,48 @@ css_inline: true
 # Navigation
 navigation:
   - units:
-    title: "Units"
-    url: "/units/"
-    - comp1000:
-        title: "COMP1000"
-        url: "/comp1000/"
-        chapters:
-        - 1:
-          name: "Transition to Processing"
-          url: /1_transition_processing/
-        - 2:
-          name: "Primitive Operations"
-          url: /1_transition_processing/
-        - 3:
-          name: "Algorithms"
-          url: /1_transition_processing/
-        - 4:
-          name: "Variables"
-          url: /1_transition_processing/
-        - 5:
-          name: "Moving Composite Shapes"
-          url: /1_transition_processing/
-        - 6:
-          name: "Debugging in Processing"
-          url: /1_transition_processing/
-        - 7:
-          name: "Boolean Expressions"
-          url: /1_transition_processing/
-        - 8:
-          name: "Conditions"
-          url: /1_transition_processing/
+      title: "Units"
+      url: "/units/"
+        - comp1000:
+              title: "COMP1000"
+              url: "/comp1000/"
+              chapters:
+                -
+                    name: "Transition to Processing"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Primitive Operations"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Algorithms"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Variables"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Moving Composite Shapes"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Debugging in Processing"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Boolean Expressions"
+                    url: "/1_transition_processing/"
+                -
+                    name: "Conditions"
+                    url: "/1_transition_processing/"
   - universal:
-    title: "Universal Skills"
-    url: /universal_skills/
-    - 1:
-      name: "Study Skills"
-      url: /1_study_skills/
-    - 2:
-      name: "How to Use Google"
-      url: /2_how_to_use_google/
-    - 3:
-      name: "Improving Coding Skills"
-      url: /3_improving_coding_skills/
+      title: "Universal Skills"
+      url: "/universal_skills/"
+      -
+        name: "Study Skills"
+        url: "/1_study_skills/"
+      -
+        name: "How to Use Google"
+        url: "/2_how_to_use_google/"
+      -
+        name: "Improving Coding Skills"
+        url: "/3_improving_coding_skills/"
 
 navigation_footer:
   - title: "Macquarie University"
@@ -115,9 +115,9 @@ navigation_footer:
 
 fonts:
   preconnect_urls:
-    - https://fonts.gstatic.com
+  - https://fonts.gstatic.com
   font_urls:
-    - https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap
+  - https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap
 
 #    font-family: 'Fira Code', monospace;
 #    font-family: 'Open Sans', sans-serif;
