@@ -66,37 +66,11 @@ css_inline: true
 # Navigation
 navigation:
   - units:
-      title: "Units"
-      url: "/units/"
-        - comp1000:
-            title: "COMP1000"
-            url: "/comp1000/"
-            chapters:
-              - name: "Transition to Processing"
-                url: "/1_transition_processing/"
-              - name: "Primitive Operations"
-                url: "/1_transition_processing/"
-              - name: "Algorithms"
-                url: "/1_transition_processing/"
-              - name: "Variables"
-                url: "/1_transition_processing/"
-              - name: "Moving Composite Shapes"
-                url: "/1_transition_processing/"
-              - name: "Debugging in Processing"
-                url: "/1_transition_processing/"
-              - name: "Boolean Expressions"
-                url: "/1_transition_processing/"
-              - name: "Conditions"
-                url: "/1_transition_processing/"
-  - universal:
-      title: "Universal Skills"
-      url: "/universal_skills/"
-      - name: "Study Skills"
-        url: "/1_study_skills/"
-      - name: "How to Use Google"
-        url: "/2_how_to_use_google/"
-      - name: "Improving Coding Skills"
-        url: "/3_improving_coding_skills/"
+      - name: COMP1000
+        url: /comp1000/
+      - name: COMP1010
+        url: /comp1010/
+
 
 navigation_footer:
   - title: "Macquarie University"
