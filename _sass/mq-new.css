@@ -43,10 +43,6 @@ main {
   width: 100%;
 }
 
-.nav-item:last-child {
-  margin-top: auto;
-}
-
 .nav-link {
   display: flex;
   align-items: center;
@@ -100,11 +96,8 @@ main {
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 5rem;
-    height: 100vh;
-  }
-  .navbar:hover {
     width: 16rem;
+    height: 100vh;
   }
   .navbar:hover .link-text {
     display: inline;

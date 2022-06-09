@@ -1,24 +1,9 @@
 <nav class="navbar">
     <ul class="navbar-nav">
 
-        <li class="nav-item"><h1>Units</h1></li>
-        {% for item in site.html_pages %}
-            {% unless item.title == false or item.url contains "/page" or item.url contains "/404.html" %}
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <span class="link-text logo-text">{{ item.title }}</span>
-                    </a>
-                </li>
-            {% endunless %}
-        {% endfor %}
-
-        <li class="nav-item"><h1>Universal Skills</h1></li>
-        {% for item in site.navigation.universal %}
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <span class="link-text logo-text">{{ item.title }}</span>
-            </a>
-        </li>
+        {% for item in site.navigation %}
+        <li class="nav-item"><h1>item.name</h1></li>
+        {{ item }}
         {% endfor %}
 
 
