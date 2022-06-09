@@ -25,9 +25,7 @@ main {
 }
 
 .navbar {
-  position: fixed;
   background-color: #313436;
-  transition: width 600ms ease;
   overflow: scroll;
 }
 
@@ -59,7 +57,7 @@ main {
 }
 
 .nav-link:hover {
-  background-color: #8a0012;
+  background-color: #57000c;
   color: #f2f3f3;
 }
 

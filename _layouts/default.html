@@ -35,13 +35,7 @@
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
     {% endif %}
 
-    {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
-
-    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
-
     {% include site-fonts.html %}
-
-    {% include site-before-start.html %}
 </head>
 
 <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
